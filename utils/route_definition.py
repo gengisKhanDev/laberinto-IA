@@ -9,6 +9,7 @@ mr.read(matrix_path=MATRIZ_BUSQUEDA)
 matriz = mr.matrix
 arbol = matriz_a_arbol(matriz)
 arbol_c = arbol_costo(matriz)
+print(arbol_c)
 
 def busqueda_preferente_por_amplitud(arbol, inicio, objetivo):
     cola = []
@@ -64,6 +65,8 @@ def busqueda_costo_uniforme(arbol, inicio, meta):
     
     return None
 
+
+
 amplitud = busqueda_preferente_por_amplitud(arbol, 'F', 'T')
 print(f'Ruta por amplitud: {amplitud}')
 
@@ -72,6 +75,3 @@ print(f'Ruta por profundidad: {profundidad}')
 
 costo = busqueda_costo_uniforme(arbol_c, 'F', 'T')
 print(f'Ruta por costo: {costo}')
-
-print(arbol)
-print(arbol_c)

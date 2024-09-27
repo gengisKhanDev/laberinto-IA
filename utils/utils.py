@@ -1,4 +1,4 @@
-MATRIZ_INTERFAZ = "matrices/matriz2.txt"
-MATRIZ_BUSQUEDA = "matrices/matriz2.txt"
-NODO_INICIO = 'E'
-NODO_META = 'P'
+MATRIZ_INTERFAZ = "matrices/matriz.txt"
+MATRIZ_BUSQUEDA = "matrices/matriz.txt"
+NODO_INICIO = 'F'
+NODO_META = 'T'

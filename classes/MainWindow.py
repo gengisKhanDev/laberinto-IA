@@ -106,18 +106,54 @@ class MainWindow(QMainWindow):
 
         # Asignamos el widget principal como central
         self.setCentralWidget(main_widget)
+        
+    def update_interface(self):
+      self.clear_layout(self.grid)  # Limpia el grid antes de actualizar
+      for i in range(len(self.matriz)):
+          for j in range(len(self.matriz[i])):
+              color_empty = "white"
+              geppeto = "assets/imgs/geppeto.jpg"
+              porro = "assets/imgs/porro.jpg"
+              zorro = "assets/imgs/zorro.jpg"
+
+              letra = chr(ord('A') + i*5 + j)
+              if letra in self.ruta:
+                  color_empty = "green"
+                  geppeto = "assets/imgs/geppeto-verde.jpg"
+                  porro = "assets/imgs/porro-verde.jpg"
+                  zorro = "assets/imgs/zorro-verde.jpg"
+
+              if self.matriz[i][j] == 1:
+                  self.grid.addWidget(Box("", "assets/imgs/pinocho.jpg"), i, j)
+              elif self.matriz[i][j] == 2:
+                  self.grid.addWidget(Box("", geppeto), i, j)
+              elif self.matriz[i][j] == 3:
+                  self.grid.addWidget(Box("", zorro), i, j)
+              elif self.matriz[i][j] == 4:
+                  self.grid.addWidget(Box("", porro), i, j)
+              elif self.matriz[i][j] == 5:
+                  self.grid.addWidget(Box("black", ""), i, j)
+              else:
+                  self.grid.addWidget(Box(color_empty, ""), i, j)
+      self.route_label.setText("Ruta: " + ', '.join(self.ruta))
+
+    def clear_layout(self, layout):
+        while layout.count():
+            child = layout.takeAt(0)
+            if child.widget():
+                child.widget().deleteLater()
 
     def amplitud(self):
         amplitud = busqueda_preferente_por_amplitud(self.arbol, self.nodo_inicio, self.nodo_meta)
         self.ruta = amplitud
-        self.create_interface()
+        self.update_interface()
 
     def profundidad(self):
         profundidad = busqueda_por_profundidad_iterativa(self.arbol, self.nodo_inicio, self.nodo_meta)
         self.ruta = profundidad
-        self.create_interface()
+        self.update_interface()
 
     def costo(self):
         costo = busqueda_costo_uniforme(self.arbol_c, self.nodo_inicio, self.nodo_meta)
         self.ruta = costo
-        self.create_interface()
+        self.update_interface()

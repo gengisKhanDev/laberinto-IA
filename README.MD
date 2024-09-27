@@ -44,9 +44,9 @@ Para el componente de raycasting, necesitas instalar pygame:
   pip install pygame
   ```
 
-### Ejecutar el Proyecto
+## Ejecutar el Proyecto
 
-## Algoritmo de Búsqueda Principal
+### Algoritmo de Búsqueda Principal
 
 Para ejecutar el algoritmo de búsqueda principal con Pinocho navegando por la cuadrícula, ejecuta el siguiente comando:
 
