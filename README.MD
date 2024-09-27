@@ -64,3 +64,4 @@ Para ejecutar la propuesta de raycasting de forma independiente, navega a la car
   ```
 Esto abrirá una ventana separada que demostrará la simulación de raycasting para el proyecto.
 
+[![Ver Demo](https://img.shields.io/badge/Ver-Demo-blue)](public/videoDemoLaberintoIA.mp4)
