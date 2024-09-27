@@ -29,9 +29,9 @@ La configuración de la cuadrícula se carga desde un archivo de texto externo, 
 
 Para ejecutar la interfaz gráfica del proyecto, necesitas instalar **PyQt5**. Puedes hacerlo utilizando el siguiente comando:
 
-    ```bash
-    pip install PyQt5
-    ```
+  ```bash
+  pip install PyQt5
+  ```
 
 Asegúrate de instalarlo en la raíz del proyecto.
 
@@ -40,9 +40,9 @@ Asegúrate de instalarlo en la raíz del proyecto.
 
 Para el componente de raycasting, necesitas instalar pygame:
 
-    ```bash
-    pip install pygame
-    ```
+  ```bash
+  pip install pygame
+  ```
 
 ### Ejecutar el Proyecto
 
@@ -50,17 +50,17 @@ Para el componente de raycasting, necesitas instalar pygame:
 
 Para ejecutar el algoritmo de búsqueda principal con Pinocho navegando por la cuadrícula, ejecuta el siguiente comando:
 
-    ```bash
-    python main.py
-    ```
+  ```bash
+  python main.py
+  ```
 
 Esto cargará la interfaz gráfica y mostrará la cuadrícula con el movimiento de Pinocho según el algoritmo de búsqueda seleccionado.
 
 ### Simulación de Raycasting
 Para ejecutar la propuesta de raycasting de forma independiente, navega a la carpeta raycasting y ejecuta:
 
-    ```bash
-    python mainCasting.py
-    ```
+  ```bash
+  python mainCasting.py
+  ```
 Esto abrirá una ventana separada que demostrará la simulación de raycasting para el proyecto.
 
