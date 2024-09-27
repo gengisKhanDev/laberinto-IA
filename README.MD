@@ -64,4 +64,4 @@ Para ejecutar la propuesta de raycasting de forma independiente, navega a la car
   ```
 Esto abrirá una ventana separada que demostrará la simulación de raycasting para el proyecto.
 
-![Demo del Proyecto](public/gifDemoLaberintoIA.gif.gif)
+![Demo del Proyecto](public/gifDemoLaberintoIA.gif)
